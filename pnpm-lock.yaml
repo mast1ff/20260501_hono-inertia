@@ -24,6 +24,12 @@ importers:
       '@hono/react-renderer':
         specifier: ^1.0.1
         version: 1.0.1(hono@4.12.16)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+      '@hono/zod-validator':
+        specifier: ^0.7.6
+        version: 0.7.6(hono@4.12.16)(zod@4.4.1)
+      '@inertiajs/core':
+        specifier: ^3.0.3
+        version: 3.0.3
       '@inertiajs/react':
         specifier: ^3.0.3
         version: 3.0.3(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -333,6 +339,12 @@ packages:
       hono: '*'
       react: ^19.0.0
       react-dom: ^19.0.0
+
+  '@hono/zod-validator@0.7.6':
+    resolution: {integrity: sha512-Io1B6d011Gj1KknV4rXYz4le5+5EubcWEU/speUjuw9XMMIaP3n78yXLhjd2A3PXaXaUwEAluOiAyLqhBEJgsw==}
+    peerDependencies:
+      hono: '>=3.9.0'
+      zod: ^3.25.0 || ^4.0.0
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -1505,6 +1517,11 @@ snapshots:
       hono: 4.12.16
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
+
+  '@hono/zod-validator@0.7.6(hono@4.12.16)(zod@4.4.1)':
+    dependencies:
+      hono: 4.12.16
+      zod: 4.4.1
 
   '@img/colour@1.1.0': {}
 
